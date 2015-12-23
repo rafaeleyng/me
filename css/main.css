@@ -15,9 +15,9 @@ body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  /*font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-  color: #222; }
-
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -43,7 +43,8 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  margin-top: 0;
+}
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -102,7 +103,8 @@ input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
   background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  border-color: #1EAEDB;
+}
 
 /*
 * Custom CSS
@@ -138,7 +140,6 @@ body,
   background-size: cover;
   background-position: center center
 }
-
 .hero {
   text-shadow: 1px 1px 2px black;
   color: #fff;
@@ -146,44 +147,39 @@ body,
   position: absolute;
   width: 100%;
   transform: translateY(-40%);
+  top: 40%;
+  font-size: 50px;
 }
-
-/* Larger than mobile */
-@media (min-width: 400px) {
-  .hero {
-    top: 40%;
-  }
-  .links a {
-    display: block;
-    margin: 10px auto;
-    max-width: 200px;
-  }
-  .hero-description {
-    font-size: 2rem;
-    margin-top: 60px;
-  }
+h1 {
+  font-size: 1em;
 }
-
+h1 strong {
+  font-size: 1.2em;
+}
+.description {
+  font-size: 0.5em;
+  margin-top: 60px;
+}
+.links a {
+  display: block;
+  margin: 10px auto;
+  max-width: 200px;
+}
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .links a {
     display: inline-block;
-    max-width: 200px;
     margin-left: 3px;
     margin-right: 3px;
     margin-bottom: 5px;
   }
+  .hero {
+    /*font-size: ;*/
+  }
 }
-
 /* Larger than desktop */
 @media (min-width: 1000px) {
-  h1 {
-    font-size: 5rem;
-  }
-  h1 strong {
-    font-size: 6rem;
-  }
-  .hero-description {
-    font-size: 3rem;
+  .hero {
+    /*font-size: ;*/
   }
 }
