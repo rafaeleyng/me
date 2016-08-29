@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Rafael Eyng</title>
-  <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="rafaeleyng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <div class="bg">
-    <div class="hero">
+
+  <section>
+    <div class="text-container">
       <!-- title -->
-      <h1>Hello, I'm<br><strong>Rafael Eyng</strong></h1>
-      <p class="description">I'm a software developer</p>
+      <h1>Hello, I'm<br><strong>Rafael Eyng.</strong></h1>
+      <p class="description">I'm a software developer.</p>
       <!-- links -->
       <div class="links">
         <a class="button button-primary" target="_blank" href="https://github.com/rafaeleyng">Github</a>
@@ -18,8 +24,14 @@
         <a class="button button-primary" target="_blank" href="http://stackoverflow.com/users/1717979/rafael-eyng">Stack Overflow</a>
         <a class="button button-primary" target="_blank" href="https://www.linkedin.com/in/rafael-eyng-09619397">LinkedIn</a>
       </div>
+      <!-- <a id="play-pause" class="button" href="#">Play</a> -->
     </div>
-  </div>
+  </section>
+
+  <video id="sleeping-video" poster="./img/Aloha-Mundo.jpg" playsinline autoplay muted loop>
+    <source src="./video/Aloha-Mundo.mp4" type="video/mp4" />
+  </video>
+
   <!-- Google Tag Manager -->
   <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KXBW9G"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
