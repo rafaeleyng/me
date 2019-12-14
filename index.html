@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rafael Eyng</title>
+  <meta name="description" content="">
+  <meta name="author" content="rafaeleyng">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    html, body {
+      height:100%;
+      padding:0;
+      margin:0;
+      font-family: 'Open Sans', sans-serif;
+      color:#FFF;
+    }
+
+    video {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      background: url('../resources/Aloha-Mundo.jpg') no-repeat;
+      background-size: cover;
+      transform: translateX(-50%) translateY(-50%);
+    }
+
+    section {
+      height: 100%;
+      width: 100%;
+      display: table;
+    }
+
+    .text-container {
+      vertical-align: middle;
+      display: table-cell;
+      text-align: center;
+    }
+
+    h1 {
+      letter-spacing: -4px;
+      font-size:100px;
+      font-weight:700;
+      text-shadow:1px 1px 1px rgba(0,0,0,0.5);
+      margin: 0;
+    }
+
+    h1 strong {
+      font-size: 1.2em;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 25px 5px 15px;
+      border-color: #fff;
+      color: #fff;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 30px 0;
+    }
+
+    @media screen and (max-width: 800px) {
+      h1 {
+        font-size: 70px;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      h1 {
+        font-size: 40px;
+      }
+      a.button {
+        display: block;
+        margin: 25px auto 15px;
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="text-container">
+      <h1>Hello, I'm<br><strong>Rafael Eyng.</strong></h1>
+      <p class="description">I'm a software developer.</p>
+      <div class="links">
+        <a class="button button-primary" target="_blank" href="https://github.com/rafaeleyng">Github</a>
+        <a class="button button-primary" target="_blank" href="https://rafaeleyng.github.io/">Blog</a>
+        <a class="button button-primary" target="_blank" href="https://stackoverflow.com/users/1717979/rafael-eyng">Stack Overflow</a>
+        <a class="button button-primary" target="_blank" href="https://www.linkedin.com/in/rafaeleyng/">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  <video poster="./resources/Aloha-Mundo.jpg" playsinline autoplay muted loop>
+    <source src="./resources/Aloha-Mundo.mp4" type="video/mp4" />
+  </video>
+</body>
+</html>
