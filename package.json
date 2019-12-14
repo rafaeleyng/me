@@ -1,0 +1,23 @@
+{
+  "name": "me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "touch .nojekyll && gh-pages"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaeleyng/me.git"
+  },
+  "keywords": [],
+  "author": "Rafael Eyng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaeleyng/me/issues"
+  },
+  "homepage": "https://github.com/rafaeleyng/me#readme",
+  "devDependencies": {
+    "gh-pages": "2.1.1"
+  }
+}
