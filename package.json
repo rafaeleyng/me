@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "touch .nojekyll && gh-pages -d src",
+    "deploy": "gh-pages -d src",
     "serve": "http-server src"
   },
   "repository": {
