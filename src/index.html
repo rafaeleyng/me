@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans&display=optional" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" as="style">
+
   <title>Rafael Eyng</title>
-  <meta name="description" content="">
-  <meta name="author" content="rafaeleyng">
+
+  <meta charset="utf-8">
+  <meta name="description" content="Rafael Eyng's personal page">
+  <meta name="author" content="Rafael Eyng" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="canonical" href="https://rafaeleyng.github.io/me/" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154633858-1"></script>
@@ -16,12 +27,25 @@
     gtag('config', 'UA-154633858-1');
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Rafael Eyng",
+    "url": "https://rafaeleyng.github.io/me/",
+    "jobTitle": "Software Developer",
+    "image": "https://s.gravatar.com/avatar/a469187bd88d00fac124dd6e3db505a5?s=200",
+    "sameAs": [
+      "https://github.com/rafaeleyng",
+      "https://rafaeleyng.github.io/",
+      "https://stackoverflow.com/users/1717979/rafael-eyng",
+      "https://www.linkedin.com/in/rafaeleyng/",
+    ],
+  }
+  </script>
 
-  <link rel="canonical" href="https://rafaeleyng.github.io/me/" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
   <style>
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=optional);
 
     html, body {
       height:100%;
@@ -40,7 +64,7 @@
       width: auto;
       height: auto;
       z-index: -100;
-      background: url('./resources/Aloha-Mundo.jpg') no-repeat;
+      background: url('./resources/Aloha-Mundo.webp') no-repeat;
       background-size: cover;
       transform: translateX(-50%) translateY(-50%);
     }
@@ -104,14 +128,14 @@
       <h1>Hello, I'm<br><strong>Rafael Eyng.</strong></h1>
       <p class="description">I'm a software developer.</p>
       <div class="links">
-        <a class="button button-primary" target="_blank" href="https://github.com/rafaeleyng">Github</a>
-        <a class="button button-primary" target="_blank" href="https://rafaeleyng.github.io/">Blog</a>
-        <a class="button button-primary" target="_blank" href="https://stackoverflow.com/users/1717979/rafael-eyng">Stack Overflow</a>
-        <a class="button button-primary" target="_blank" href="https://www.linkedin.com/in/rafaeleyng/">LinkedIn</a>
+        <a class="button button-primary" target="_blank" rel="noopener" href="https://github.com/rafaeleyng">Github</a>
+        <a class="button button-primary" target="_blank" rel="noopener" href="https://rafaeleyng.github.io/">Blog</a>
+        <a class="button button-primary" target="_blank" rel="noopener" href="https://stackoverflow.com/users/1717979/rafael-eyng">Stack Overflow</a>
+        <a class="button button-primary" target="_blank" rel="noopener" href="https://www.linkedin.com/in/rafaeleyng/">LinkedIn</a>
       </div>
     </div>
   </section>
-  <video poster="./resources/Aloha-Mundo.jpg" playsinline autoplay muted loop>
+  <video poster="./resources/Aloha-Mundo.webp" playsinline autoplay muted loop>
     <source src="./resources/Aloha-Mundo.mp4" type="video/mp4" />
   </video>
 </body>
