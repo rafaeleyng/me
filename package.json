@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d src",
-    "serve": "http-server src"
+    "build": "rm -fr ./dist && cp -Rp ./src ./dist && yarn minify",
+    "deploy:src": "gh-pages -d src",
+    "deploy:dist": "yarn build && gh-pages -d dist",
+    "minify": "html-minifier --file-ext html --input-dir src --output-dir dist --collapse-whitespace --minify-css true --minify-js true",
+    "serve:src": "http-server src",
+    "serve:dist": "yarn build && http-server dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,8 @@
   "homepage": "https://github.com/rafaeleyng/me#readme",
   "devDependencies": {
     "gh-pages": "2.1.1",
+    "html-minifier": "4.0.0",
     "http-server": "0.12.0"
-  }
+  },
+  "dependencies": {}
 }
