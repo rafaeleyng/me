@@ -28,6 +28,17 @@
     gtag('config', 'UA-154633858-1');
   </script>
 
+  <script>
+    const handleOutboundLink = function(link) {
+      const url = link.href
+      gtag('event', 'click', {
+        'event_category': 'outbound',
+        'event_label': url,
+        'transport_type': 'beacon',
+      });
+    }
+  </script>
+
   <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -129,10 +140,10 @@
       <h1>Hello, I'm<br><strong>Rafael Eyng.</strong></h1>
       <p class="description">I'm a software developer.</p>
       <div class="links">
-        <a class="button button-primary" target="_blank" rel="noopener" href="https://github.com/rafaeleyng">Github</a>
-        <a class="button button-primary" target="_blank" rel="noopener" href="https://rafaeleyng.github.io/">Blog</a>
-        <a class="button button-primary" target="_blank" rel="noopener" href="https://stackoverflow.com/users/1717979/rafael-eyng">Stack Overflow</a>
-        <a class="button button-primary" target="_blank" rel="noopener" href="https://www.linkedin.com/in/rafaeleyng/">LinkedIn</a>
+        <a class="button button-primary" onclick="handleOutboundLink(this)" target="_blank" rel="noopener" href="https://github.com/rafaeleyng">Github</a>
+        <a class="button button-primary" onclick="handleOutboundLink(this)" target="_blank" rel="noopener" href="https://rafaeleyng.github.io/">Blog</a>
+        <a class="button button-primary" onclick="handleOutboundLink(this)" target="_blank" rel="noopener" href="https://stackoverflow.com/users/1717979/rafael-eyng">Stack Overflow</a>
+        <a class="button button-primary" onclick="handleOutboundLink(this)" target="_blank" rel="noopener" href="https://www.linkedin.com/in/rafaeleyng/">LinkedIn</a>
       </div>
     </div>
   </section>
