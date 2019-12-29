@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <link rel="preconnect" href="https://www.google-analytics.com" />
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans&display=optional" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans" as="style">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" as="style">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" as="style">
 
@@ -12,6 +12,7 @@
   <meta name="description" content="Rafael Eyng's personal page">
   <meta name="author" content="Rafael Eyng" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1a191b" />
 
   <link rel="canonical" href="https://rafaeleyng.github.io/me/" />
 
@@ -60,11 +61,15 @@
     @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=optional);
 
     html, body {
-      height:100%;
-      padding:0;
-      margin:0;
+      height: 100%;
+      padding: 0;
+      margin: 0;
       font-family: 'Open Sans', sans-serif;
-      color:#FFF;
+      color: #FFF;
+    }
+
+    html {
+      background-color: #1a191b;
     }
 
     video {
